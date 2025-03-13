@@ -26,7 +26,7 @@ build:
 
 requirements:
   host:
-    - python ${{ python_min }}
+    - python ${{ python_min }}.*
     - setuptools >=40.6.2
     - wheel >=0.30.0
     - basedtyping >=0.0.3
@@ -49,7 +49,7 @@ tests:
         - mypy
   - requirements:
       run:
-        - python ${{ python_min }}
+        - python ${{ python_min }}.*
         - pip
     script:
       - pip check
